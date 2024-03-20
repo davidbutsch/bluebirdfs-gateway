@@ -1,4 +1,4 @@
-process.title = "microservice-template";
+process.title = "bluebirdfs-gateway";
 Error.stackTraceLimit = process.env.NODE_ENV === "production" ? -1 : 10;
 
 import { addAlias } from "module-alias";
@@ -13,7 +13,7 @@ import { env } from "@/common";
 import { initializeWorkers } from "@/queue";
 
 libs.Logger.info(
-  `microservice-template with process id of ${process.pid} starting in ${env.NODE_ENV} mode`
+  `bluebirdfs-gateway with process id of ${process.pid} starting in ${env.NODE_ENV} mode`
 );
 
 initializeWorkers();
